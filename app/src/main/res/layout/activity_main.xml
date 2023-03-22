@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/personBgrp"
+        android:layout_width="108dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="280dp"
+        android:ems="10"
+        android:hint="@string/blood_group"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/personContact"
+        app:layout_constraintEnd_toEndOf="@+id/personContact"
+        app:layout_constraintHorizontal_bias="0.302"
+        app:layout_constraintStart_toEndOf="@+id/personAge"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/PersonName"
+        android:layout_width="352dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="@string/name"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/personBgrp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.655"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/personAge"
+        android:layout_width="91dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="280dp"
+        android:ems="10"
+        android:hint="@string/age"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/personContact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/personContact"
+        android:layout_width="355dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="@string/contact"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/insert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/viewdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        android:backgroundTint="@color/black"
+        android:backgroundTintMode="multiply"
+        android:fontFamily="serif-monospace"
+        android:text="@string/view_saved_data"
+        app:layout_constraintBottom_toBottomOf="@+id/insert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/insert" />
+
+    <Button
+        android:id="@+id/insert"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="420dp"
+        android:backgroundTint="@color/black"
+        android:backgroundTintMode="add"
+        android:fontFamily="serif-monospace"
+        android:text="@string/insert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ListView
+        android:id="@+id/person_details"
+        android:layout_width="410dp"
+        android:layout_height="227dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="488dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="377dp"
+        android:layout_height="219dp"
+        app:layout_constraintBottom_toTopOf="@+id/PersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
